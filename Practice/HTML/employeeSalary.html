@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0">
+    <title>Employee Salary Calculation</title>
+</head>
+<body>
+    <form>
+        <input type="number" placeholder="Basic salary" id="basic" name="basic"><br>
+
+        <ul id="allAllowences"></ul>
+        <label for="allowences">Allowences</label><br>
+        <input type="text" id="allowences" placeholder="Allowence Name">
+        <input type="number" id="allowenceAmount" placeholder="Allowence amount">
+        <button type="button" id="addAllowence">Add Allowence</button><br>
+
+        <ul id="allTaxes"></ul>
+        <label for="taxes">Tax (%)</label><br>
+        <input type="text" id="taxes" placeholder="Tax title">
+        <input type="text" id="taxAmount" placeholder="Tax % on basic salary">
+        <button type="button" id="addTax">Add Tax</button><br><br>
+        
+        <input type="submit" id="calculate">
+    </form>
+    <div id="result">
+        Net Salary: 
+    </div>
+    <script type="text/javascript" src="../JS/arrayAndFunction/employeeSalaryCalculator.js"></script>
+</body>
+</html>

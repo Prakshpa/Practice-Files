@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>Cyber Law</td>
+            <td><input type="number" id="cyberLawScore" placeholder="Enter score"></td>
+        </tr>
+        <tr>
+            <td>E-Governance</td>
+            <td><input type="number" id="eGovernanceScore" placeholder="Enter score"></td>
+        </tr>
+        <tr>
+            <td>Cloud Computing</td>
+            <td><input type="number" id="cloudComputingScore" placeholder="Enter score"></td>
+        </tr>
+        <tr>
+            <td>Software Project Management</td>
+            <td><input type="number" id="spmScore" placeholder="Enter score"></td>
+        </tr>
+    </table>
+    <button onclick="calculatePercentage()">Calculate Percentage</button>
+    <p id="totalScore"></p>
+    <p id="percentageResult"></p>
+    <p id="gradeResult"></p>
+    <script type="text/javascript" src="../JS/percentageCalculator.js"></script>
+</body>

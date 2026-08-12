@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+</head>
+<body>
+    <label for="currency">Select Currency:</label>
+    <select id="currency">
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">British Pound (GBP)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="USD">US Dollar (USD)</option>
+    </select>
+    <label for="amount">Enter Amount:</label>
+    <input type="text" id="amount" placeholder="Enter amount of the currency">
+    <button onclick="convertCurrency()">Convert</button>
+    <p id="result"></p>
+    <script type="text/javascript" src="../JS/currencyCalculator.js"></script>
+</body>
+</html>
