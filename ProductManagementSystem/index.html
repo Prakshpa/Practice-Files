@@ -10,7 +10,17 @@
         <input type="text" name="" id="">
     </form>
     <form class="search-box">
-        <select name="" id=""></select>
+        <label for="sort">Sort By Price</label>
+        <select name="sort" id="sort">
+            <option value="">Sort By</option>
+            <option value="asc">Ascending order</option>
+            <option value="asc">Descending order</option>
+        </select>
+        <label for="filter">Filter By</label>
+        <select name="filter" id="filter">
+            <option value="Status">Status</option>
+            <option value="category">Category</option>
+        </select>
         <input type="search" placeholder="Search Product" title="search">
         <input type="submit" value="Search">
     </form>
@@ -30,4 +40,9 @@
             <tbody></tbody>
         </table>
     </section>
-    <script type="module" src="d
+    <section id="summary">
+        <p id="message"></p>
+    </section>
+    <script type="module" src="dist/index.js"></script>
+</body>
+</html>
