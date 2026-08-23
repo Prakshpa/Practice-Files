@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake API store</title>
+    <link rel="stylesheet" href="../../CSS/week3/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="users">Users</a></li>
+            </ul>
+            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+        </nav>
+    </header>
+    <main>
+        <button onclick="createUser()" class="action-button create-btn"> + Create User </button>
+        <section class="form">
+            <form action="" id=user-form>
+                <input type="text" name="username" id="username" placeholder="UserName">
+                <input type="text" name="name" id="name" placeholder="Full Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="number" name="phone" id="phone" placeholder="Phone">
+                <input type="password" name="password" id="password" placeholder="*******">
+                <input type="submit" id="submit-user" value="Create User" class="action-button submit-btn">
+                <input type="reset" id="cancel-button" value="Cancel" class="action-button cancel-btn"><br>
+
+                <span class="error"></span>
+            </form>
+        </section>
+        <div class="loading-box">
+            <p class="loading-spinner"></p>
+            <span>Loading...</span>
+        </div>
+        <div class="view-box"></div>
+        <table class="table-view">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>UserName</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <script type="text/javascript" src="../../JS/week3/home.js"></script>
+</body>

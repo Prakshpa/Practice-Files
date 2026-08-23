@@ -1,0 +1,16 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev",
+    "mock-api": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.15",
+    "typescript": "^7.0.2"
+  }
+}

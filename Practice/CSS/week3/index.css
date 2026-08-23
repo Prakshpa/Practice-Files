@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.card-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
+    gap: 2vh 1vw;
+}
+.card-element {
+    background-color: lightblue;
+    color: blue;
+}
+.icon {
+    width: max(1vh, 40px);
+    height: max(1vh, 40px);
+}
+header {
+    position:sticky;
+    top: -5px;
+}
+nav {
+    display: flex;
+    background-color: green;
+    justify-content: space-around;
+    align-items: center;
+}
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex-wrap: wrap;
+    min-width: 50vw;
+}
+nav li>a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: larger;
+    background-color: red;
+    color: lightblue;
+    border: 1px solid black;
+}
+nav li>a:hover {
+    background-color: blue;
+    color: yellow;
+    border-color: white;
+}
+.loading-spinner {
+    display: inline-flex;
+    border: 2vh solid rgba(0,0,0,0);
+    border-radius: 10vh;
+    width: 10vh;
+    height: 10vh;
+    border-top: 2vh solid blue;
+    animation: spin 1s linear infinite;
+}
+.loading-box {
+    display: grid;
+    position: absolute;
+    top: 40vh;
+    font-size: large;
+    position: absolute;
+    top: 40vh;
+    z-index: 100;
+    width: 15vh;
+    height: 15vh;
+    justify-self: center;
+    /* animation: spin-backwards 1s linear infinite; */
+}
+.form {
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+}
+#username, #name, #email, #phone, #password {
+    font-size: large;
+    padding: 2px 4px;
+    margin: 5px;
+    width: 20ch;
+}
+#submitUser {
+    color: yellow;
+    background-color: green;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+#submitUser:hover {
+    color: green;
+    background-color: lightblue;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin-backwards {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.user-table, .user-table th, .user-table td {
+    border: 1px solid green;
+}
+.user-table th {
+    padding: 5px 10px
+}
+.user-table td {
+    padding: 0px 2px;
+}
+.error {
+    color: red;
+}
+
+
+.action-button {
+    margin: 2px 5px;
+    padding: 2px 4px;
+    color: yellow;
+}
+
+.create-btn {
+    margin-top: 1vh;
+    background: green;
+    padding: 5px 10px;
+    font-size: larger;
+}
+
+.submit-btn {
+    font-size: large;
+    background: green;
+}
+
+.cancel-btn {
+    background: gray;
+    color: black;
+    font-size: large;
+}
+
+.view-btn {
+    background: #3498db;
+}
+
+.edit-btn {
+    background: #f39c12;
+}
+
+.delete-btn {
+    background: #e74c3c;
+}
+
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+.action-btn svg {
+    pointer-events: none;
+}

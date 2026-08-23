@@ -1,0 +1,52 @@
+@keyframes animation {
+    0% {
+        color: red;
+        background-color: green;
+        left: 5px;
+        top: 5px;
+    }
+    20% {
+        color: blue;
+        background-color: aquamarine;
+        left: 500px;
+        top: 5px;
+    }
+    40% {
+        color: white;
+        background-color: green;
+        left: 500px;
+        top: 500px;
+    }
+    60% {
+        color: yellow;
+        background-color: black;
+        left: 5px;
+        top: 500px;
+    }
+    80% {
+        color: black;
+        border: 2px solid black;
+        background-color: white;
+        left: 250px;
+        top: 250px;
+    }
+    100% {
+        color: red;
+        background-color: green;
+        left: 5px;
+        top: 5px;
+    }
+}
+.animated {
+    width: fit-content;
+    padding: 20px;
+    font-size: x-large;
+    position: relative;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: 2;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+    animation-direction: normal;
+}

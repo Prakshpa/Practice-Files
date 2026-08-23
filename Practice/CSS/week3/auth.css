@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main.auth-form {
+    height: min(fit-content, 100vh);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    max-width: max(4in, 50%);
+    min-width: min(100%, 350px);
+    vertical-align: middle;
+    justify-self: center;
+    padding: 2vh 1vw;
+    border-radius: 2vh;
+}
+.auth-form td:first-child {
+    padding: 5px;
+}
+.auth-form td:last-child {
+    padding-right: 10px;
+}
+.auth-form caption {
+    color: green;
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 10px;
+}
+label {
+    color: #505;
+    font-size: large;
+}
+input {
+    font-size: large;
+    color: #101;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+#message {
+    padding: 10px;
+}
+#submit {
+    background-color: green;
+    color: #aa5;
+    margin: 10px;
+    border: 1px solid yellow
+}
+#reset {
+    background-color: #f55;
+    color: #0ff;
+    margin: 10px;
+    border: 1px solid yellow;
+}
+#submit:hover, #reset:hover {
+    border: 1px solid blue;
+    background-color: orange;
+    color: blue;
+}
+#buttons {
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}

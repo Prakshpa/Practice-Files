@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Example</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <div id="toggle">
+            <button type="button" title="Toggle Sidebar">
+                <svg width="50" height="60">
+                    <polygon points="10,40 40,40 40,45 10,45 10,30 40,30 40,35 10,35 10,20 40,20 40,25 10,25" fill="white"/>
+                </svg>
+            </button>
+        </div>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="" rel="nochange" title="Home" class="nav-options">Home</a></li>
+                <li><a href="#gallery" class="nav-options">Gallery</a></li>
+            </ul>
+            <a href="#join" class="book">Book now</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Restaurant</h1>
+        <section class="welcome">
+            <h2 class="greet">Welcome to our Restaurant website</h2>
+            <p class="greet">Let's Get you In</p><br>
+            <p>Explore our restaurant</p>
+            <div class="links">
+                <p class="explore">
+                    <a href="#">
+                        <img src="assets/foods.jfif" alt="Foods" class="explore-image"><br>
+                        <span class="explore-item">Foods</span>
+                    </a>
+                </p>
+                <p class="explore">
+                    <a href="#">
+                        <img src="assets/party.jpg" alt="Party" class="explore-image"><br>
+                        <span class="explore-item">Party</span>
+                    </a>
+                </p>
+                <p class="explore">
+                    <a href="#">
+                        <img src="assets/building.jfif" alt="Locations" class="explore-image"><br>
+                        <span class="explore-item">Locations</span>
+                    </a>
+                </p>
+                <p class="explore">
+                    <a href="#">
+                        <img src="assets/outdoor.jpg" alt="Environment" class="explore-image"><br>
+                        <span class="explore-item">Environment</span>
+                    </a>
+                </p>
+            </div>
+        </section>
+        <section class="about">
+            <h2>About us</h2>
+            <p>We are serving from this restaurant and other hospitality businesses for 20 years. You get attractive looks, friendly staffs and comfortable environment in our restaurant.</p>
+        </section>
+        <section class="gallery" id="gallery">
+            <br><br>
+            <h2>Gallery</h2>
+            <picture>
+                <img src="assets/drone_view.jpg" alt="Drone view" class="picture">
+                <img src="assets/entrance.jpg" alt="Entrance" class="picture">
+                <img src="assets/party.jpg" alt="Party" class="picture">
+                <img src="assets/food.jpg" alt="Foods" class="picture">
+                <img src="assets/building.jfif" alt="Place" class="picture">
+                <img src="assets/interior.webp" alt="Interior" class="picture">
+                <img src="assets/kitchen.webp" alt="Kitchen" class="picture">
+                <img src="assets/outdoor.jpg" alt="Outdoor" class="picture">
+                <img src="assets/happy-customers.jfif" alt="Happy customers" class="picture">
+            </picture>
+        </section>
+        <section class="form" id="join"><br>
+            <h2>Book seats</h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone no</label></td>
+                        <td><input type="number" id="phone" name="phone" minlength="10" maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="from">Start Time</label><br>
+                            <input type="time" name="start" id="from">
+                        </td>
+                        <td>
+                            <label for="number">Number of seats</label><br>
+                            <input type="number" id="number" name="number" max="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Book Now</button></td>
+                        <td><button type="reset"> Reset </button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <span>
+            <p class="chat-prompt">Hello! Welcome to restaurant chat.</p>
+            <button type="button" title="Ask Question" class="chat">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="chat-icon">
+                    <title>ChatBot</title>
+                    <path d="M11.999 0c-2.25 0-4.5.06-6.6.21a5.57 5.57 0 00-5.19 5.1c-.24 3.21-.27 6.39-.06 9.6a5.644 5.644 0 005.7 5.19h3.15v-3.9h-3.15c-.93.03-1.74-.63-1.83-1.56-.18-3-.15-6 .06-9 .06-.84.72-1.47 1.56-1.53 2.04-.15 4.2-.21 6.36-.21s4.32.09 6.36.18c.81.06 1.5.69 1.56 1.53.24 3 .24 6 .06 9-.12.93-.9 1.62-1.83 1.59h-3.15l-6 3.9V24l6-3.9h3.15c2.97.03 5.46-2.25 5.7-5.19.21-3.18.18-6.39-.03-9.57a5.57 5.57 0 00-5.19-5.1c-2.13-.18-4.38-.24-6.63-.24zm-5.04 8.76c-.36 0-.66.3-.66.66v2.34c0 .33.18.63.48.78 1.62.78 3.42 1.2 5.22 1.26 1.8-.06 3.6-.48 5.22-1.26.3-.15.48-.45.48-.78V9.42c0-.09-.03-.15-.09-.21a.648.648 0 00-.87-.36c-1.5.66-3.12 1.02-4.77 1.05-1.65-.03-3.27-.42-4.77-1.08a.566.566 0 00-.24-.06z" fill="#0f0"/>
+                </svg>
+            </button>
+        </span>
+    </main>
+    <footer>
+        <h2>Contact us at</h2>
+        <p>Boudha Pipalbot, Kathmandu, Nepal</p><br>
+        <ul class="contact">
+            <li class="contact-list">
+                <a href="javascript:void(0)" title="Social Link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
+                            data-original="#000000" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" title="Social Link 2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
+                        viewBox="0 0 511 512">
+                        <path
+                            d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"
+                            data-original="#000000" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" title="Social 3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        
+    </footer>
+</body>
+</html>

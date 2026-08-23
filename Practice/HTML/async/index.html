@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous JavaScript</title>
+    <link rel="stylesheet" href="../../CSS/async/cardView.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="" alt="Company Logo">
+            <ul>
+                <li><button id="fetch-button">Fetch Users</button></li>
+                <li><button id="reset-button">Reset</li>
+                <li><button id="table-view">Table View</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-items">
+            <form action="">
+                <span>
+                    <select name="search-option" id="search-option" title="Search By">
+                        <option value="">Search By</option>
+                        <option value="username">UserName</option>
+                        <option value="name">Name</option>
+                        <option value="email">Email</option>
+                    </select>
+                    <select name="sort-option" id="sort-option" title="Sort Order">
+                        <option value="">Sort in</option>
+                        <option value="asc">Ascending Order</option>
+                        <option value="des">Descending Order</option>
+                    </select>
+                </span>
+                <span>
+                    <input type="search" id="search-user" placeholder="Search an user">
+                    <button type="submit" id="search-button">Search User</button>
+                </span>
+            </form>
+        </section>
+        <p id="message">Click on Fetch users button to fetch users</p>
+        <section class="card-view">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; All rights reserved</p>
+    </footer>
+    <!-- <script type="text/javascript" src="../../JS/async/ajax.js"></script> -->
+    <!-- <script type="text/javascript" src="../../JS/async/promise.js"></script> -->
+    <!-- <script type="text/javascript" src="../../JS/async/fetch.js"></script> -->
+    <script type="text/javascript" src="../../JS/async/async-await.js"></script>
+</body>

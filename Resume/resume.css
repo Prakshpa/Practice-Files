@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+.skill-level {
+    width: 80%;
+    height: 5px;
+    background-color: #ccc;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+.skill-level span {
+    display: block;
+    height: 100%;
+    background-color: #0493cc;
+}
+a {
+    padding: 0px;
+    margin-bottom: 10px;
+    color:black
+}
+td {
+    padding: 10px;
+    padding-left: 0px;
+}
+table {
+    width: fit-content;
+    border-collapse: collapse;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    margin: 0px 10px;
+}
+polygon {
+    fill:black;
+    stroke:purple;
+    stroke-width:0;
+    fill-rule:evenodd
+}
+header {
+    background-color: #0493cc;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    float: none;
+}
+header h1 {
+    margin: 0;
+}
+aside * {
+    text-align: center;
+    margin-bottom: 0px;
+}
+#toggle {
+    display: none;
+    background-color: #0493cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+main {
+    background: #fff;
+    padding-left: max(20px, 1%)
+}
+h2 {
+    color: #333;
+    text-decoration-style: highlight;
+    display: inline-block;
+    align-self: center
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+
+}
+aside {
+    background-color: #0493cc;
+    color: #fff;
+    padding: 20px;
+    flex-grow: 1;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.social-link {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 1300px) {
+    .grid {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+@media (max-width: 768px) {
+    img{
+        width: 100px;
+        height: 100px;
+        margin: 2px
+    }
+    .grid {
+        grid-template-columns: 1fr 2fr;
+    }
+    aside {
+        height: 100%;
+    }
+}
+@media (max-width: 420px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+    img {
+        float: none;
+    }
+    aside {
+        width: 100%;
+    }
+    main {
+        margin-left: 5px;
+    }
+}

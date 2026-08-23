@@ -1,0 +1,9 @@
+{
+    "name": "Prakash Parajuli",
+    "age": 23,
+    "address": {
+    "city": "Kathmandu",
+    "country": "Nepal"
+    },
+    "hobbies": ["Playing", "Travelling", "Listening Music"]
+}
