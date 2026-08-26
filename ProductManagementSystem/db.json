@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "category": "Grocery",
+      "description": "abc",
+      "name": "abcdef",
+      "price": 123,
+      "status": "Delivered",
+      "stock": 123,
+      "id": "yl0tso1cFR8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

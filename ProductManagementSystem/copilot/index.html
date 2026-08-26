@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <link rel="stylesheet" href="../styles/copilot/style.css">
+</head>
+<body>
+    <h1>Product Management System</h1>
+    <form id="productForm">
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="text" name="description" id="description" placeholder="Description">
+        <input type="number" name="price" id="price" placeholder="Price" required>
+        <input type="text" name="category" id="category" placeholder="Category" required>
+        <input type="number" name="stock" id="stock" placeholder="Stock" required>
+        <select name="status" id="status">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+        <button type="submit">Add Product</button>
+    </form>
+    <div>
+        <input type="text" name="search" id="search" placeholder="Search by name">
+        <select name="filterStatus" id="filterStatus">
+            <option value="">All Status</option>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+        <input type="text" name="filterCategory" id="filterCategory" placeholder="Filter by category">
+        <button id="sortAsc">Sort Price Asc</button>
+        <button id="sortDesc">Sort Price Desc</button>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Stock</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="productTable"></tbody>
+    </table>
+    <h3>Total Inventory Value: <span id="inventoryValue">0</span></h3>
+    <script src="../js/copilot/app.js" type="module"></script>
+</body>
+</html>
