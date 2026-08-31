@@ -26,7 +26,7 @@ export default function DescriminatingUnion() {
     switch(shapeData.name){
         case "circle" : 
             console.log("Area of circle is ", shapeData.radius * shapeData.radius * 3.14);
-            return;
+            break;
         case "rectangle": 
             console.log("Area of rectangle is ", shapeData.length * shapeData.breadth);
             break;

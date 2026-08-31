@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 export default function MutableValueRef() {
-    const ref = useRef(-1);
+    const ref = useRef(0);
 const [halfCount, setHalfCount] = useState(0);
 function increamentClick( ) {
     ref.current++;
