@@ -9,7 +9,6 @@ export default function UseState(){
     const [genericNumberArray, setGenericNumberArray] = useState<number[]>();
 
 
-
     function changeAll(){
         setCount(count+1);
         setData({id :data.id+1, name: "Ram"});

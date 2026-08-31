@@ -7,14 +7,14 @@ import './App.css';
 // import SpecialProps from './props/SpecialProps';
 // import GenericRow from './others/GenericList';
 // import DefaultProps from './props/DefaultProps';
-// import UseState from './others/UseState';
+import UseState from './others/UseState';
 // import DescriminatingUnion from './others/DiscriminatingUnion';
 // import SyntheticEvent from './events/SyncheticEvent';
 // import MouseEvent from './events/MouseEvent';
 // import ChangeEvent from './events/ChangeEvent';
 // import FormEvent from './events/FormEvent';
 // import KeyboardEvent from './events/KeyboardEvent';
-import FocusEvent from './events/FocusEvent';
+// import FocusEvent from './events/FocusEvent';
 
 // Generic
 // interface User {
@@ -63,7 +63,7 @@ function App() {
       <DefaultProps message='Anyone in there' />
     </SpecialProps> */}
 
-    {/* <UseState /> */}
+    <UseState />
 
     {/* <DescriminatingUnion /> */}
 
@@ -77,9 +77,10 @@ function App() {
 
     {/* <KeyboardEvent /> */}
 
-    <FocusEvent />
+    {/* <FocusEvent /> */}
+
     </>
-  )
+  );
 }
 
 export default App
