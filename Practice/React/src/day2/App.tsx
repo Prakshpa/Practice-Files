@@ -11,7 +11,7 @@ import DecendentContext from './useContext/DecendentContext';
 import CustomHook from './useContext/CustomHook';
 import UsingCustomHook from './useContext/UsingCustomHook';
 import type{ User, Product } from './types/types';
-// import GenericTable from './GenericComponents/genericTable/GenericTable';
+import GenericTable from './GenericComponents/genericTable/GenericTable';
 // import List from './GenericComponents/genericList/List';
 import GenericForwardRef from './GenericComponents/GenericForwardRef';
 import Counter from './useReducer/DemoReducer';
@@ -19,7 +19,7 @@ import {useEffect, useRef, } from "react";
 import { useFetch } from './exercise/useFetch';
 
 function App() {
-    const {data, fetchData} = useFetch<Product>("https://fakestoreapi.com/products");
+    const {data, fetchData} = useFetch<User>("https://fakestoreapi.com/users");
     const ref = useRef<HTMLOListElement>(undefined);
     useEffect(()=>{
         if(data.state==="success" && ref.current!==null && ref.current!==undefined) {
@@ -56,13 +56,13 @@ function App() {
 
     {data.state==="loading" && <p>Loading...</p>}
     {data.state==="error" && <p>Error: {data.error}</p>}
-    {/* data.state==="success" && <GenericTable<User> data={data.data} columns={[
+    {data.state==="success" && <GenericTable<User> data={data.data} columns={[
         {key:"id" as keyof User, header: "ID"},
         {key:"username" as keyof User, header: "UserName"},
         {key:"name" as keyof User, header: "Full Name"},
         {key:"email" as keyof User, header: "Email"},
         {key:"phone" as keyof User, header: "Phone"},
-    ]}/> */} <br /><br />
+    ]}/>} <br /><br />
 
     {data.state === "success" && <GenericForwardRef ref={ref} data={data.data} renderItem={(data:Product)=>(
         <div>

@@ -4,8 +4,8 @@ export interface Product {
     id?: number,
     name: string,
     description: Text | string,
-    price: number,
+    price: number | "",
     category: Categories,
-    stock: number,
+    stock: number | "",
     status: Status
 }

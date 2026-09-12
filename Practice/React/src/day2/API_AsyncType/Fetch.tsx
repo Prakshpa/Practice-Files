@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { RequestType } from "../types/types";
 
-export const useFetch = async (url: string, requestOptions?: RequestType) => {
+export const useFetch = (url: string, requestOptions?: RequestType) => {
     const [data, setData] = useState<unknown[]>();
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);

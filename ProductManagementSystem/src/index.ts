@@ -6,9 +6,9 @@ let productData: Product = {
     category: "" as Categories,
     description: "",
     name: "",
-    price: 0,   
+    price: "",   
     status: "" as Status,
-    stock: 0
+    stock: ""
 }
 const productForm: HTMLFormElement = document.querySelector("form.product-form")!;
 const pName: HTMLInputElement = document.getElementById("pName") as HTMLInputElement;
@@ -57,7 +57,7 @@ const categoryOption = document.getElementById("category") as HTMLSelectElement;
 const searchText = document.querySelector('input[type="search"]') as HTMLInputElement;
 const searhButton=document.querySelector("input[type=submit]") as HTMLInputElement;
 
-const productSection=document.querySelector(".content")!;
+    const productSection=document.querySelector(".content")!;
 const productTable=document.querySelector("tbody#productTable") as HTMLTableSectionElement;
 
 addProduct.addEventListener("click", ()=>{
@@ -124,7 +124,7 @@ function renderProductData(productData: Required<Product>[]) {
     productTable.textContent="";
     productData.forEach((value, index)=>{
         productCount++;
-        totalValue += value.price * value.stock;
+        totalValue += ((value.price==="")? 0:value.price)*((value.stock==="")? 0:value.stock);
         const tr = document.createElement("tr");
         tr.innerHTML=`
             <td> ${value.id} </td>
@@ -189,8 +189,8 @@ function searchProducts() {
         else return true;
     });
     if(sortType!=='') {
-        if(sortType === "asc") filteredProducts.sort((a, b)=> a.price-b.price)
-        else if (sortType === "desc") filteredProducts.sort((a,b)=>b.price-a.price);
+        if(sortType === "asc") filteredProducts.sort((a, b)=> (a.price as number)-(b.price as number))
+        else if (sortType === "desc") filteredProducts.sort((a,b)=>(b.price as number)-(a.price as number));
     }
     renderProductData(filteredProducts);
 }

@@ -1,0 +1,16 @@
+export const links = [
+    {id: 0, src: "src/day3/audio/unknown.MP3", title: "Song 1"},
+    {id: 1, src: "src/day3/audio/kuraKhattiHo.mp3", title: "Song 2"},
+    {id: 2, src: "src/day3/audio/LappanChappan.MP3", title: "Song 3"},
+    {id: 3, src: "src/day3/audio/SetoGhoda.MP3", title: "Song 4"},
+    {id: 4, src: "src/day3/audio/TemporaryMaya.MP3", title: "Song 5"},
+    {id: 5, src: "src/day3/audio/baba.MP3", title: "Song 6"},
+    {id: 6, src: "src/day3/audio/Gopya.MP3", title: "Song 7"},
+    {id: 7, src: "src/day3/audio/Banaima.MP3", title: "Song 8"},
+    {id: 8, src: "src/day3/audio/Chiyabarima.MP3", title: "Song 9"},
+    {id: 9, src: "src/day3/audio/Guranssari.MP3", title: "Song 10"},
+    {id: 10, src: "src/day3/audio/Dalidali.MP3", title: "Song 11"},
+    {id: 11, src: "src/day3/audio/UkaliOrali.MP3", title: "Song 12"},
+    {id: 12, src: "src/day3/audio/siririri.MP3", title: "Song 13"},
+    {id: 13, src: "src/day3/audio/ShanivarkoDin.MP3", title: "Song 14"},
+]

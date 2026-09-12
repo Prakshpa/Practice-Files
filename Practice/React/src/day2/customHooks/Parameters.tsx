@@ -15,32 +15,33 @@ export const useFetch = function <T>(url: string, requestOptions?: RequestType) 
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        const response = async function fetchData(){
-            setLoading(true);
-            setError("");
-            setData(undefined);
-            try {
-                if(requestOptions!==undefined) {
-                    const response = await fetch(url, requestOptions);
-                    if(response.ok) setData(await response.json());
-                    else throw new Error("Failed to fetch data");
-                    
-                }else {
-                    const response = await fetch(url);
-                    if (response.ok) setData(await response.json())
-                    else throw new Error("Failed to fetch data");
-                }
-            } catch (error) {
-                setError((error as Error).message);
-            } finally {
-                setLoading(false);
+    async function fetchData(){
+        setLoading(true);
+        setError("");
+        setData(undefined);
+        try {
+            if(requestOptions!==undefined) {
+                const response = await fetch(url, requestOptions);
+                if(response.ok) setData(await response.json());
+                else throw new Error("Failed to fetch data");
+                
+            }else {
+                const response = await fetch(url);
+                if (response.ok) setData(await response.json())
+                else throw new Error("Failed to fetch data");
             }
+        } catch (error) {
+            setError((error as Error).message);
+        } finally {
+            setLoading(false);
         }
-        response();
+    }
+
+    useEffect(() => {
+        fetchData();
     },[])
     
-    return {data, loading, error};
+    return {data, loading, error, fetchData};
 }
 
 
